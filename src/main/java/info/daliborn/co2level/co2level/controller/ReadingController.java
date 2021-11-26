@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 
 @RestController
-@RequestMapping(path="/reading",
+@RequestMapping(path="/v1/reading",
         produces="application/json")
 @CrossOrigin(origins="*")
 public class ReadingController {

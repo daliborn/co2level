@@ -7,13 +7,14 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
 
-class DtoMapperTest {
-    DtoMapper dtoMapper;
+class DtoMapperImplTest {
+    DtoMapperImpl dtoMapper;
 
     @BeforeEach
     void setUp() {
-        dtoMapper = new DtoMapper();
+        dtoMapper = new DtoMapperImpl();
     }
 
     @Test
@@ -23,6 +24,8 @@ class DtoMapperTest {
         CityDistrict district = new CityDistrict();
         district.setName("test");
         sensor.setCityDistrict(district);
+
+
         var result = dtoMapper.mapSensorReadingDto(sensor);
         assertEquals("test",result.getCityDistrict());
     }

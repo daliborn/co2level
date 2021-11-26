@@ -6,7 +6,7 @@ import info.daliborn.co2level.co2level.service.SensorService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path="/sensor",
+@RequestMapping(path="/v1/sensor",
         produces="application/json")
 @CrossOrigin(origins="*")
 public class SensorController {

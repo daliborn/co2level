@@ -16,7 +16,7 @@ münchen:münchen
 
 ### Create a sensor
 
-curl --location --request POST 'http://localhost:8080/sensor' \
+curl --location --request POST 'http://localhost:8080/v1/sensor' \
 --header 'Authorization: Basic YmFyY2Vsb25hOmJhcmNlbG9uYQ==' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -26,7 +26,7 @@ curl --location --request POST 'http://localhost:8080/sensor' \
 
 ### Create a reading
 
-curl --location --request POST 'http://localhost:8080/reading' \
+curl --location --request POST 'http://localhost:8080/v1/reading' \
 --header 'Authorization: Basic YmFyY2Vsb25hOmJhcmNlbG9uYQ==' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -37,7 +37,7 @@ curl --location --request POST 'http://localhost:8080/reading' \
 
 ### Get Sensor readings
 
-curl --location --request GET 'http://localhost:8080/sensor/1' \
+curl --location --request GET 'http://localhost:8080/v1/sensor/1' \
 --header 'Authorization: Basic YmFyY2Vsb25hOmJhcmNlbG9uYQ==' \
 --header 'Cookie: JSESSIONID=F20157FE8709FFD508170C2EF0268C36'
 
