@@ -24,10 +24,6 @@ public class ReadingServiceImpl implements ReadingService{
         this.dtoMapper = dtoMapper;
     }
 
-    public Iterable<Reading> findAll() {
-        return readingRepository.findAll();
-    }
-
     public Optional<ReadingDto> find(String id) {
         var reading =readingRepository.findById(id);
         return reading.map(dtoMapper::mapReading);

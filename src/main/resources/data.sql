@@ -9,6 +9,11 @@ INSERT INTO CITYDISTRICT (id, name,city_hall_username) VALUES (3, 'Währing','wi
 INSERT INTO CITYDISTRICT (id, name,city_hall_username) VALUES (4, 'Penzing','wien');
 INSERT INTO CITYDISTRICT (id, name,city_hall_username) VALUES (5, 'Maxvorstadt','münchen');
 
+INSERT INTO CITYHALL_CITY_DISTRICTS (city_hall_username,city_districts_id) VALUES ('barcelona',1);
+INSERT INTO CITYHALL_CITY_DISTRICTS (city_hall_username,city_districts_id) VALUES ('barcelona',2);
+INSERT INTO CITYHALL_CITY_DISTRICTS (city_hall_username,city_districts_id) VALUES ('wien',3);
+INSERT INTO CITYHALL_CITY_DISTRICTS (city_hall_username,city_districts_id) VALUES ('wien',4);
+INSERT INTO CITYHALL_CITY_DISTRICTS (city_hall_username,city_districts_id) VALUES ('münchen',5);
 
 insert into AUTHORITIES (authority, username) values ('ADMIN', 'ADMIN');
 insert into AUTHORITIES (authority, username) values ('USER', 'barcelona');

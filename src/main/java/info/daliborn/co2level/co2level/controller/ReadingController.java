@@ -2,6 +2,7 @@ package info.daliborn.co2level.co2level.controller;
 
 import info.daliborn.co2level.co2level.domain.Reading;
 import info.daliborn.co2level.co2level.domain.dto.ReadingDto;
+import info.daliborn.co2level.co2level.service.ReadingService;
 import info.daliborn.co2level.co2level.service.ReadingServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,16 +13,12 @@ import java.time.LocalDateTime;
         produces="application/json")
 @CrossOrigin(origins="*")
 public class ReadingController {
-    private final ReadingServiceImpl readingService;
+    private final ReadingService readingService;
 
-    public ReadingController(ReadingServiceImpl readingService) {
+    public ReadingController(ReadingService readingService) {
         this.readingService = readingService;
     }
 
-    @GetMapping
-    public Iterable<Reading> allReadings() {
-        return readingService.findAll();
-    }
 
     @GetMapping("/{id}")
     public ReadingDto getReading(@PathVariable String id) {
