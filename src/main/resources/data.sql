@@ -1,10 +1,4 @@
--- INSERT INTO CITYHALL (id, name) VALUES (1, 'Barcelona');
--- INSERT INTO CITYHALL (id, name) VALUES (2, 'Wien');
--- INSERT INTO CITYHALL (id, name) VALUES (3, 'München');
-
-
-
-insert into CITYHALL (enabled, password, username) values (true, '$2a$10$iEbfZctBohHmzVyZo69/EurN.qmXfJpUdqIzuXCh4PJqFnjyTmFVK', 'admin');
+insert into CITYHALL (enabled, password, username) values (true, '$2a$10$ngratBBy3KyojlakgaRbrumeKqXqYy5Vpg1fcXELvPIPGSyM5zOqq', 'admin');
 insert into CITYHALL (enabled, password, username) values (true, '$2a$10$plHpH21CFPujq15wLYNp8O9KaIIFnqskTEtowXQyAT3pGXy0XrdgK', 'barcelona');
 insert into CITYHALL (enabled, password, username) values (true, '$2a$10$bMNSKgEv.ttkcPk1ZqTvMewVbHS7WJnMfizrFESj7pTxpbCqi3sEi', 'wien');
 insert into CITYHALL (enabled, password, username) values (true, '$2a$10$WbdV..Wr0hHUG9wASy177e724rOnJfBMbSVliz9M7kYXFw4/wMIkS', 'münchen');
